@@ -1,0 +1,57 @@
+import 'dart:convert';
+
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:DRPublic/component/api/baes_url.dart';
+import 'package:DRPublic/component/api/interceptor.dart';
+
+class CancleSubScribeDataAPI {
+  Future<CancleSubScribeDataAPIResponseModel> cancleSubscribe(
+      {required String accesToken, required int targetIndex}) async {
+    dynamic baseUri =
+        Uri.parse('${ApiBaseUrlConfig().baseUri}subscribe/cancleSubscribe');
+
+    final response = await InterceptorHelper().client.put(
+          baseUri,
+          headers: {
+            "Content-Type": "application/json",
+            "authorization": "Bearer " + accesToken,
+          },
+          body: json.encode({
+            "target_index": targetIndex,
+          }),
+        );
+
+    if (response.statusCode == 200) {
+      // print('datas: ${utf8.decode(response.bodyBytes.toList())}');
+
+      return CancleSubScribeDataAPIResponseModel.fromJson(
+          json.decode(utf8.decode(response.bodyBytes.toList())));
+    } else if (response.statusCode == 401 &&
+        response.body.split(":")[3].split('"')[1] ==
+            'Authorization token expired') {
+      final _prefs = await SharedPreferences.getInstance();
+
+      return CancleSubScribeDataAPI().cancleSubscribe(
+          accesToken: _prefs.getString('AccessToken')!,
+          targetIndex: targetIndex);
+    } else {
+      throw Exception(response.body);
+    }
+  }
+}
+
+class CancleSubScribeDataAPIResponseModel {
+  dynamic result;
+
+  CancleSubScribeDataAPIResponseModel({
+    this.result,
+  });
+
+  factory CancleSubScribeDataAPIResponseModel.fromJson(
+      Map<dynamic, dynamic> data) {
+    return CancleSubScribeDataAPIResponseModel(
+      result: data,
+    );
+  }
+}

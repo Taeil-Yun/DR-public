@@ -1,0 +1,113 @@
+name: DRPublic
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 2.4.0+24
+ios_version: 2.3.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  metadata_fetch: ^0.4.1
+  http: ^0.13.4
+  http_interceptor: ^1.0.2
+  shared_preferences: ^2.0.15
+  flutter_screenutil: ^5.5.2
+  auto_size_text: ^3.0.0
+  flutter_flavorizr: ^2.1.3
+  extended_text: ^9.1.0
+  google_sign_in: ^5.3.2
+  sign_in_with_apple: ^4.0.0
+  kakao_flutter_sdk: ^1.1.1
+  flutter_naver_login: ^1.6.0
+  firebase_messaging: ^11.4.1
+  flutter_local_notifications: ^9.6.0
+  path_provider: ^2.0.11
+  flutter_html: ^3.0.0-alpha.6
+  intl: ^0.17.0
+  flutter_localizations:
+    sdk: flutter
+  image_picker: ^0.8.5+3
+  image_cropper: ^3.0.0
+  permission_handler: ^9.2.0
+  flutter_staggered_grid_view: ^0.6.1
+  material_tag_editor: ^0.1.2
+  oktoast: ^3.2.0
+  flutter_slidable: ^1.3.0
+  youtube_player_iframe: ^2.3.0
+  percent_indicator: ^4.2.2
+  url_launcher: ^6.1.5
+  carousel_slider: ^4.1.1
+  share_plus: ^4.0.10
+  app_links: ^3.2.0
+  textfield_tags: ^2.0.1
+  flutter_email_sender: ^5.1.0
+  iamport_flutter: ^0.10.1+4
+  wakelock: ^0.6.2
+  # flutter_facebook_sdk: ^1.0.0
+  yaml: ^3.1.1
+  web_socket_channel: ^2.2.0
+  launch_review: ^3.0.1
+  cached_network_image: ^3.2.1
+  flutter_native_splash:
+  flutter_svg:
+  webview_flutter:
+  firebase_dynamic_links:
+
+dependency_overrides:
+  firebase_messaging_platform_interface: 3.1.6
+  firebase_crashlytics_platform_interface: 3.1.13
+  firebase_analytics_platform_interface: 3.0.5
+  firebase_core_platform_interface: 4.4.0
+  firebase_dynamic_links_platform_interface: 0.2.0+5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  flutter_launcher_icons: ^0.9.3
+
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/img/
+    - assets/icon/
+    - assets/splash/
+    - pubspec.yaml
+
+  fonts:
+    - family: AppleSDGothicNeo
+      fonts:
+        - asset: fonts/apple_sd_gothic/AppleSDGothicNeoL.ttf
+        - asset: fonts/apple_sd_gothic/AppleSDGothicNeoM.ttf
+        - asset: fonts/apple_sd_gothic/AppleSDGothicNeoB.ttf
+        - asset: fonts/apple_sd_gothic/AppleSDGothicNeoEB.ttf
+        - asset: fonts/apple_sd_gothic/AppleSDGothicNeoH.ttf
+
+flutter_native_splash:
+  color: "#1e1e1e"
+  image: assets/img/splash_none.png
+  # branding: assets/img/splash_text.png
+  color_dark: "#1e1e1e"
+  image_dark: assets/img/splash_none.png
+  # branding_dark: assets/img/splash_text.png
+
+  android_12:
+    image: assets/img/splash_none.png
+    # icon_background_color: "#1e1e1e"
+    image_dark: assets/img/splash_none.png
+    # icon_background_color_dark: "#1e1e1e"
+
+  web: false

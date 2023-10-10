@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "3841433800",
+    "project_id": "DRPublic-dev",
+    "storage_bucket": "DRPublic-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3841433800:android:dc693729933be5a003c5fd",
+        "android_client_info": {
+          "package_name": "net.weclipse.DRPublic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3841433800-oq4cv0l1edk87u08ic76042g21u55mn2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.weclipse.DRPublic",
+            "certificate_hash": "583ec6bdac5919d8b4250e36b15a8e2e492e08ce"
+          }
+        },
+        {
+          "client_id": "3841433800-utccgrgl1cmog3rhg0c2a501jo5ulf6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZZqKQ_33rFsy2d5u3_lExuP4KQtNK5X4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3841433800-igl278lns7ih9cbpdi43vc1dir77pv9r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "3841433800-kcu0533p65q3k5fvg0akm703n4oc6115.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "net.weclipse.DRPublic"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

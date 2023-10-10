@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.navercorp.nid:oauth-jdk8:5.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be9dafb18230e6fb33c8e7ac90f75a47/jetified-oauth-jdk8-5.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be9dafb18230e6fb33c8e7ac90f75a47/jetified-oauth-jdk8-5.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be9dafb18230e6fb33c8e7ac90f75a47/jetified-oauth-jdk8-5.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.navercorp.nid/oauth-jdk8/5.0.1/4d3b263b7cc16e47d7d10013e2d0b15ee7e4d302/oauth-jdk8-5.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
